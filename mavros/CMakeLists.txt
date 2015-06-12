@@ -71,6 +71,7 @@ add_message_files(
   VFR_HUD.msg
   FileEntry.msg
   ActuatorControl.msg
+  ManualControl.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -191,6 +192,7 @@ add_library(mavros_plugins
   src/plugins/vfr_hud.cpp
   src/plugins/ftp.cpp
   src/plugins/actuator_control.cpp
+  src/plugins/manual_control.cpp
 )
 add_dependencies(mavros_plugins
   mavros
