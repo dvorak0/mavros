@@ -180,7 +180,7 @@ private:
 
 		// NED -> ENU (body-fixed)
 		tf::Quaternion orientation = tf::createQuaternionFromRPY(
-				att.roll, -att.pitch, -att.yaw);
+				att.roll, att.pitch, att.yaw);
 
 		fill_imu_msg_attitude(imu_msg, orientation,
 				att.rollspeed,

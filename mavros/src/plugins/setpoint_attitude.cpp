@@ -129,9 +129,9 @@ private:
 		// ENU->NED, description in #49.
 		tf::Quaternion tf_q = transform.getRotation();
 		q[0] = tf_q.w();
-		q[1] = tf_q.y();
-		q[2] = tf_q.x();
-		q[3] = -tf_q.z();
+		q[1] = tf_q.x();
+		q[2] = tf_q.y();
+		q[3] = tf_q.z();
 
 		set_attitude_target(stamp.toNSec() / 1000000,
 				ignore_all_except_q,
